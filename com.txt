@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 ffmpeg -r 24 -f image2 -s 1280x720 -i Generated-%d.png -i vid.mp3 -vcodec libx264 -b 4M -acodec copy OUTPUT.mp4
 
 python pix2pix.py --dataroot ./db --which_direction AtoB --num_epochs 15 --batchSize 4 --no_resize_or_crop --no_flip
 
 python pix2pix_test.py --dataroot ./db --which_direction AtoB --num_epochs 15 --batchSize 4 --no_resize_or_crop --no_flip
+=======
+ffmpeg -r 24 -f image2 -s 1280x720 -i Generated-%d.png -i vid.mp3 -vcodec libx264 -b 4M -acodec copy OUTPUT.mp4
+
+python pix2pix.py --dataroot ./db --which_direction AtoB --num_epochs 15 --batchSize 4 --no_resize_or_crop --no_flip
+
+python pix2pix_test.py --dataroot ./db --which_direction AtoB --num_epochs 15 --batchSize 4 --no_resize_or_crop --no_flip
+>>>>>>> 2f9255adcfe79eb7f9a06f85268ec0b5b4e6d405
